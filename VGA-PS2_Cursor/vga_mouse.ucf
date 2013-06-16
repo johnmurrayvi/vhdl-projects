@@ -1,0 +1,91 @@
+
+# clock pin for Basys2 Board
+# Bank = 0, Signal name = MCLK
+NET "sclk" LOC = B8;
+NET "sclk" CLOCK_DEDICATED_ROUTE = FALSE;
+#INST "c40MHz/DCM_SP_INST" LOC = DCM_X0Y1;
+#PIN "c40MHz/DCM_SP_INST.CLKIN" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk_40mhz" BUFG = CLK;
+
+
+NET "cathodes[0]" LOC = L14; # Bank = 1, Signal name = CA
+NET "cathodes[1]" LOC = H12; # Bank = 1, Signal name = CB
+NET "cathodes[2]" LOC = N14; # Bank = 1, Signal name = CC
+NET "cathodes[3]" LOC = N11; # Bank = 2, Signal name = CD
+NET "cathodes[4]" LOC = P12; # Bank = 2, Signal name = CE
+NET "cathodes[5]" LOC = L13; # Bank = 1, Signal name = CF
+NET "cathodes[6]" LOC = M12; # Bank = 1, Signal name = CG
+#NET "dp" LOC = "N13"; # Bank = 1, Signal name = DP
+
+
+NET "anodes[0]" LOC = F12; # Bank = 1, Signal name = AN0
+NET "anodes[1]" LOC = J12; # Bank = 1, Signal name = AN1
+NET "anodes[2]" LOC = M13; # Bank = 1, Signal name = AN2
+NET "anodes[3]" LOC = K14; # Bank = 1, Signal name = AN3
+
+
+# Pin assignment for LEDs
+#NET "zpos[3]" LOC = G1; # Bank = 3, Signal name = LD7
+#NET "zpos[2]" LOC = P4; # Bank = 2, Signal name = LD6
+#NET "zpos[1]" LOC = N4; # Bank = 2, Signal name = LD5
+NET "zposled" LOC = N5; # Bank = 2, Signal name = LD4
+NET "busyev" LOC = P6; # Bank = 2, Signal name = LD3
+NET "left" LOC = P7; # Bank = 3, Signal name = LD2
+NET "middle" LOC = M11; # Bank = 2, Signal name = LD1
+NET "right" LOC = M5; # Bank = 2, Signal name = LD0
+
+# Pin assignment for SWs
+#NET "bgsw[5]" LOC = "N3";  # Bank = 2, Signal name = SW7
+#NET "bgsw[5]" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "bgsw[4]" LOC = E2; # Bank = 3, Signal name = SW6
+#NET "bgsw[4]" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "bgsw[3]" LOC = "F3";  # Bank = 3, Signal name = SW5
+#NET "bgsw[3]" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "bgsw[2]" LOC = "G3";  # Bank = 3, Signal name = SW4
+NET "bgsw[2]" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "bgsw[1]" LOC = "B4";  # Bank = 3, Signal name = SW3
+NET "bgsw[1]" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "bgsw[0]" LOC = "K3";  # Bank = 3, Signal name = SW2
+NET "bgsw[0]" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "resolution" LOC = L3; # Bank = 3, Signal name = SW1
+NET "resolution" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "pos_sw" LOC = P11; # Bank = 2, Signal name = SW0
+NET "pos_sw" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#NET "btn3" LOC = "A7";  # Bank = 1, Signal name = BTN3
+#NET "btn2" LOC = "M4";  # Bank = 0, Signal name = BTN2
+#NET "btn1" LOC = "C11"; # Bank = 2, Signal name = BTN1
+NET "rst" LOC = G12; # Bank = 0, Signal name = BTN0
+NET "rst" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# Pin assignment for PS2
+NET "ps2_clk" LOC = B1; # Bank = 3, Signal name = PS2C
+NET "ps2_clk" DRIVE = 2;
+NET "ps2_clk" PULLUP;
+NET "ps2_data" LOC = C3; # Bank = 3, Signal name = PS2D
+NET "ps2_data" DRIVE = 2;
+NET "ps2_data" PULLUP;
+
+# Pin assignment for VGA
+
+NET "hsync" LOC = J14; #  | PULLUP ; # Bank = 1, Signal name = HSYNC
+NET "hsync" DRIVE = 2;
+NET "vsync" LOC = K13; #  | PULLUP ; # Bank = 1, Signal name = VSYNC
+NET "vsync" DRIVE = 2;
+
+NET "vga_red[2]" LOC = F13; #  | PULLUP ; # Bank = 1, Signal name = RED2
+NET "vga_red[2]" DRIVE = 2;
+NET "vga_red[1]" LOC = D13; #  | PULLUP ; # Bank = 1, Signal name = RED1
+NET "vga_red[1]" DRIVE = 2;
+NET "vga_red[0]" LOC = C14; #  | PULLUP ; # Bank = 1, Signal name = RED0
+NET "vga_red[0]" DRIVE = 2;
+NET "vga_green[2]" LOC = G14; #  | PULLUP ; # Bank = 1, Signal name = GRN2
+NET "vga_green[2]" DRIVE = 2;
+NET "vga_green[1]" LOC = G13; #  | PULLUP ; # Bank = 1, Signal name = GRN1 
+NET "vga_green[1]" DRIVE = 2;
+NET "vga_green[0]" LOC = F14; #  | PULLUP ; # Bank = 1, Signal name = GRN0 
+NET "vga_green[0]" DRIVE = 2;
+NET "vga_blue[2]" LOC = J13; #  | PULLUP ; # Bank = 1, Signal name = BLU2
+NET "vga_blue[2]" DRIVE = 2;
+NET "vga_blue[1]" LOC = H13; #  | PULLUP ; # Bank = 1, Signal name = BLU1 
+NET "vga_blue[1]" DRIVE = 2;

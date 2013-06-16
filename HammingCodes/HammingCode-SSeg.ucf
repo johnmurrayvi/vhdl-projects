@@ -1,0 +1,29 @@
+# John Murray
+# ECE351
+# UCF for Hamming Code project with 7-Segment Display
+
+NET "clk" LOC = "B8";
+
+NET "enc" LOC = "P11";
+
+NET "data[1]" LOC = "L3";
+NET "data[2]" LOC = "K3";
+NET "data[3]" LOC = "B4";
+NET "data[4]" LOC = "G3";
+NET "data[5]" LOC = "F3";
+NET "data[6]" LOC = "E2";
+NET "data[7]" LOC = "N3";
+
+NET "anodes[0]" LOC = "F12";
+NET "anodes[1]" LOC = "J12";
+NET "anodes[2]" LOC = "M13";
+NET "anodes[3]" LOC = "K14";
+
+NET "segments[0]" LOC = "L14";
+NET "segments[1]" LOC = "H12";
+NET "segments[2]" LOC = "N14";
+NET "segments[3]" LOC = "N11";
+NET "segments[4]" LOC = "P12";
+NET "segments[5]" LOC = "L13";
+NET "segments[6]" LOC = "M12";
+NET "segments[7]" LOC = "N13";

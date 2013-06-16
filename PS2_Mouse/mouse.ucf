@@ -1,0 +1,38 @@
+
+# CLK pin
+NET "clk" LOC = "B8"; # MCLK
+
+# Display pins
+NET "cathodes[0]" LOC = "L14"; # CA
+NET "cathodes[1]" LOC = "H12"; # CB
+NET "cathodes[2]" LOC = "N14"; # CC
+NET "cathodes[3]" LOC = "N11"; # CD
+NET "cathodes[4]" LOC = "P12"; # CE
+NET "cathodes[5]" LOC = "L13"; # CF
+NET "cathodes[6]" LOC = "M12"; # CG
+
+NET "anodes[0]" LOC = "F12"; # AN0
+NET "anodes[1]" LOC = "J12"; # AN1
+NET "anodes[2]" LOC = "M13"; # AN2
+NET "anodes[3]" LOC = "K14"; # AN3
+
+# LED pins
+NET "zpos[3]" LOC = "G1";   # LD7
+NET "zpos[2]" LOC = "P4";   # LD6
+NET "zpos[1]" LOC = "N4";   # LD5
+NET "zpos[0]" LOC = "N5";   # LD4
+NET "busyev"  LOC = "P6";   # LD3
+NET "left"    LOC = "P7";   # LD2
+NET "middle"  LOC = "M11";  # LD1
+NET "right"   LOC = "M5";   # LD0
+
+# SW pins
+NET "res_sw"  LOC = "N3";   # SW7
+NET "pos_sw"  LOC = "P11";  # SW0
+
+# BTN pins
+NET "grst"    LOC = "G12";  # BTN0
+
+# PS2 pins
+NET "ps2_clk"   LOC = "B1" | DRIVE = 2 | PULLUP; # PS2C
+NET "ps2_data"  LOC = "C3" | DRIVE = 2 | PULLUP; # PS2D

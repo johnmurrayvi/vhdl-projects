@@ -1,0 +1,17 @@
+# John Murray
+# ECE351
+# UCF for Hamming Code project with LEDs
+
+NET "enc" LOC = P11;        # SW0
+
+NET "pout[1]" LOC = M5;     # LD0
+NET "pout[2]" LOC = M11;    # LD1
+NET "pout[3]" LOC = P7;     # LD2
+
+NET "data[7]" LOC = N3;     # SW7
+NET "data[6]" LOC = E2;     # SW6
+NET "data[5]" LOC = F3;     # SW5
+NET "data[4]" LOC = G3;     # SW4
+NET "data[3]" LOC = B4;     # SW3
+NET "data[2]" LOC = K3;     # SW2
+NET "data[1]" LOC = L3;     # SW1
